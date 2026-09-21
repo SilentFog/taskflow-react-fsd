@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: var(--font-main);
+  font-size: 16px;
+}
+
+body {
+   margin: 0;
+    font-family: var(--font-family-base);
+    background-color: var(--task-bg);
+    color: var(--task-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app {
+  min-height: 100vh;
+  background: var(--task-bg);
+
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-container {
+  background: var(--task-card);
+  color: var(--task-text);
+}
+
+.task-input,
+.date-input,
+.priority-select {
+  background: var(--task-input-bg);
+  color: var(--task-text);
+  border-color: var(--task-border);
+}
+
+.stat-card {
+  background: var(--task-stat-bg);
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  appearance: none;
+}
+
+body.auth-open {
+  overflow: hidden;
+}

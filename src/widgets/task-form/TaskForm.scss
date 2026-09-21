@@ -1,0 +1,89 @@
+.add-task {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.task-input,
+.date-input,
+.priority-select {
+    height: 52px;
+    border: 1px solid var(--task-border);
+    border-radius: 12px;
+    padding: 0 14px;
+    outline: none;
+    background: var(--task-input-bg);
+    color: var(--task-text);
+    font-family: var(--font-family-base);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &::placeholder {
+        color: var(--task-muted);
+    }
+
+    &:focus {
+        border-color: var(--task-primary);
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    }
+}
+
+.date-input,
+.priority-select {
+    cursor: pointer;
+}
+
+
+.date-input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: var(--task-theme-filter, none);
+}
+
+.priority-select option {
+    background: var(--task-card);
+    color: var(--task-text);
+}
+
+.add-button {
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 12px;
+    background: var(--task-primary);
+    color: #ffffff;
+    font-size: 25px;
+    font-family: var(--font-family-base);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+
+    &:hover {
+        opacity: 0.9;
+        transform: scale(1.02);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+@media (max-width: 700px) {
+    .add-task {
+        grid-template-columns: 1fr auto;
+    }
+
+    .task-input {
+        grid-column: 1 / -1;
+    }
+
+    .date-input,
+    .priority-select {
+        width: 100%;
+    }
+
+    .add-button {
+        width: 52px;
+    }
+}

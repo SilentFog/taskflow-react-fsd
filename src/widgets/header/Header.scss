@@ -1,0 +1,105 @@
+.header {
+    margin-bottom: 28px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+
+    h1 {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--task-text);
+        margin: 0;
+        white-space: nowrap;
+    }
+}
+
+.search-input {
+    flex: 1;
+    max-width: 220px;
+    height: 42px;
+    border: 1px solid var(--task-border);
+    border-radius: 12px;
+    padding: 0 14px;
+    outline: none;
+    background: var(--task-input-bg);
+    color: var(--task-text);
+    font-family: var(--font-family-base);
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+
+    &::placeholder {
+        color: var(--task-muted);
+    }
+
+    &:hover {
+        border-color: var(--task-primary);
+    }
+
+    &:focus {
+        border-color: var(--task-primary);
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+        background: var(--task-card);
+    }
+}
+
+.theme-button {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border: 1px solid var(--task-border);
+    border-radius: 12px;
+    background: var(--task-primary-light);
+    color: var(--task-primary);
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        transform: translateY(-1px);
+        border-color: var(--task-primary);
+        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+    }
+
+    &:active {
+        transform: translateY(0) scale(0.96);
+        box-shadow: none;
+    }
+
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+    }
+}
+
+@media (max-width: 700px) {
+    .header-actions {
+        flex-wrap: wrap;
+        gap: 10px;
+
+        h1 {
+            font-size: 24px;
+            width: 100%;
+        }
+    }
+
+    .search-input {
+        max-width: 100%;
+        order: 3;
+    }
+
+    .header-weather {
+        order: 1;
+    }
+
+    .theme-button {
+        order: 2;
+    }
+}

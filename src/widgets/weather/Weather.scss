@@ -1,0 +1,39 @@
+.weather-widget {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 12px;
+    border-radius: 12px;
+    background: var(--task-primary-light);
+    border: 1px solid var(--task-border);
+    color: var(--task-text);
+    transition: background-color 0.3s ease;
+}
+
+.weather-icon {
+    font-size: 16px;
+}
+
+.weather-city {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--task-text);
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--font-family-base);
+    cursor: pointer;
+
+    option {
+        background: var(--task-card);
+        color: var(--task-text);
+    }
+}
+
+.weather-temperature {
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: var(--task-primary);
+}

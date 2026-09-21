@@ -1,0 +1,42 @@
+
+:root {
+    --font-family-base: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    --task-bg: #f1f5f9;
+    --task-card: #ffffff;
+    --task-text: #0f172a;
+    --task-muted: #64748b;
+    --task-border: #e2e8f0;
+    --task-input-bg: #f8fafc;
+    --task-primary: #0ea5e9;
+    --task-primary-light: #e0f2fe;
+    --task-stat-bg: #f1f5f9;
+    --task-danger: #ef4444;
+    --task-danger-bg: #fef2f2;
+    --task-danger-border: #fecaca;
+    --task-success: #10b981;
+    --task-warning: #f59e0b;
+
+    color-scheme: light;
+}
+
+[data-theme="dark"] {
+    --task-bg: #0b1120;
+    --task-card: #111827;
+    --task-text: #f1f5f9;
+    --task-muted: #94a3b8;
+    --task-border: #1e293b;
+    --task-input-bg: #1e293b;
+
+    --task-primary: #38bdf8;
+    --task-primary-light: #0c4a6e;
+
+    --task-stat-bg: #1e293b;
+    --task-danger: #f87171;
+    --task-danger-bg: #450a0a;
+    --task-danger-border: #7f1d1d;
+    --task-success: #34d399;
+    --task-warning: #fbbf24;
+
+    color-scheme: dark;
+}
