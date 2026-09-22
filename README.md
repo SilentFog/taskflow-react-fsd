@@ -13,7 +13,7 @@
 | TaskFlow Preview 1 | TaskFlow Preview 2 |
 | :---: | :---: |
 | ![Demo 1](https://github.com/user-attachments/assets/dbf21a85-3b8d-482a-8e67-0083d152fdf6) | ![Demo 2](https://github.com/user-attachments/assets/d63ffe1d-4d6c-455e-b149-37e3e222495b) |
-🔗 **[Live Demo](https://your-demo-link.vercel.app)** | 📦 **[GitHub Repository](https://github.com/SilentFog/taskflow-react-fsd)**
+🔗 **[Live Demo](https://taskflow-react-fsd.vercel.app/)** | 📦 **[GitHub Repository](https://github.com/SilentFog/taskflow-react-fsd)**
 
 ---
 
