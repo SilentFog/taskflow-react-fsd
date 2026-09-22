@@ -1,3 +1,5 @@
+<div align="center">
+
 # 📝 TaskFlow — Modern Task Management App
 
 [![React 19](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev/)
@@ -6,6 +8,8 @@
 [![Sass/SCSS](https://img.shields.io/badge/Sass-SCSS-CC6699?style=flat&logo=sass&logoColor=white)](https://sass-lang.com/)
 [![BEM](https://img.shields.io/badge/Architecture-BEM-6366F1?style=flat)](https://en.bem.info/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://opensource.org/licenses/MIT)
+
+</div>
 
 > A clean, responsive task manager built with **React 19** and **Feature-Sliced Design (FSD)**.  
 > Features a real-time weather widget, advanced filtering, progress analytics, and local persistence.
